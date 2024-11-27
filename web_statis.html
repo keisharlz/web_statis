@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaggotXpert</title>
+  <link rel="stylesheet" href="web_statis.css">
+  <link rel="stylesheet" href="web_statis.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/Latihan/Images/logo maggot.jpeg">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<header class="logo">MaggotXpert</header>
+</div>
+<!-- Navbar -->
+<div class="navbar">
+  <ul>
+        <li><a href="http://localhost/Latihan/web_statis.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="http://localhost/Latihan/About_web_statis.html"><i class="fa-solid fa-building"></i> About</a></li>
+        <li><a href="#"><i class="fa-solid fa-brain"></i> Knowledge <i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown_navbar"> 
+        <ul>
+            <li><a href="http://localhost/Latihan/News_web_statis.html"><i class="fa-solid fa-newspaper"></i> News</a></li>
+            <li><a href="http://localhost/Latihan/Journal_web_statis.html"><i class="fa-solid fa-book"></i> Journal</a></li>
+            <li><a href="http://localhost/Latihan/Gallery_web_statis.html"><i class="fa-solid fa-image"></i>
+            Gallery</a></li>
+        </ul>
+        </div>
+        <li><a href="http://localhost/Latihan/Product_web_statis.html"><i class="fa-solid fa-bag-shopping"></i> Product</a></li>
+        <li><a href="http://localhost/Latihan/Account_web_statis.html"><i class="fa-solid fa-user"></i> Account</a></li>
+    </ul>
+  <form class="search">
+  <input type="text" name="search" placeholder="Search...">
+</form>
+</div>
+</header>
+
+<!-- Banner -->
+<div class="banner"></div>
+<div class="row">
+  <div class="side">
+    <h2>Jam</h2>
+    <div class="fakeimg" style="height:60px;">
+      <div id="myClock" style="font-size: 30px; font-family: Copperplate; text-align: center;"></div>
+<script>
+  function showTime(){
+    var date= new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+    var session ="AM";
+
+    if (h>12) {
+      h=h-12;
+      session ="PM"
+    }
+    if (h==0) {
+      h=12;
+    }
+
+    h=(h<10)? "0" + h:h;
+    m=(m<10)? "0" + m:m;
+    s=(s<10)? "0" + s:s;
+    var time = h + ":"+ m + ":"+ s+ " "+session;
+    document.getElementById('myClock').innerText = time;
+    document.getElementById('myClock').textContent = time;
+
+    setTimeout(showTime,1000);
+  }
+  showTime();
+</script>
+    </div>
+<br>
+<!-- News & Journal Sidebar-->
+    <h3>Our News</h3>
+    <img src="/Latihan/Images/berita1.jpeg" width="200px" height="150px">
+    <div class="fakeimg">
+      <br>
+      <div class="date">
+                <i class="far fa-clock"></i>
+                <span>4th April, 2024</span>
+                <br><br>
+                <p style="font-size:16px;">SENANDIKA.REPUBLIKA.CO.ID, JAKARTA — Sistem Informasi Pengelolaan Sampah Nasional (SIPSN) Kementerian Lingkungan Hidup dan Kehutanan (KLHK) mencatat, pada 2023 Indonesia menghasilkan 19 juta ton sampah dengan komposisi sampah terbesar berasal dari sampah sisa makanan yakni sebesar 41 persen. Tetapi ada biokonversi maggot, yang sebenarnya dapat mengurai sampah organik dengan cepat.<br> Seperti inisiasi yang dilakukan Garudafood pada program Kampung Wirausaha Maggot sejak 2021 di Pati, Jawa Tengah, bekerja sama dengan pemuda karang taruna setempat. Maggot merupakan larva lalat tentara hitam atau black soldier fly (BSF) berukuran antara 0,3 cm sampai 1,5 cm. Maggot tidak membawa patogen dan tidak memiliki gigi, sehingga tidak menularkan penyakit. Sumber makanan Maggot adalah sampah dapur, sampah pasar berupa sayur dan buah, hingga sampah organik pabrik...</p>
+                <div class="lnjt"><a href="http://localhost/Latihan/News_web_statis.html"> Selengkapnya</a></div>
+            </div>
+          </div>
+          <br>
+          <h3>Our News</h3>
+<img src="/Latihan/Images/jurnal1.png" width="250px" height="200px">
+    <div class="fakeimg2">
+      <br>
+      <div class="date">
+                <i class="far fa-clock"></i>
+                <span>2024</span>
+                <br><br>
+                <p style="font-size:16px;">Hermetia ilIucens commonly known as the Black Soldier Fly has a life cycle phase that produces larvae commonly referred to as maggots. The growth of BSF maggot is strongly influenced by nutrients in the feed media. The purpose of this study was to determine the effect of the best type and combination of organic materials on maggot growth. This research was conducted experimentally using the RAL (Completely Randomized Design) method consisting of 3 treatments and control (no treatment). Based on the research that has been done, the results obtained P1 with a combination of bran feed and chicken intestines (50%: 50%) and P3 with a combination of bran feed, chicken intestines and vegetable waste (50%: 25%: 25%) provide the best growth for maggots. While K as control with bran feed (100%) and P2 with a combination of bran feed and fruit waste (50%:50%) gave lower maggot growth. This combination of different feeds also results in residual results in the form of kasgot which has a different pH so that it can be seen that maggots can live and grow in the pH range 3-6. This study shows that the combination of feed media can affect the growth of BSF maggots and the pH of each residue....</p>
+               <div class="lnjt"><a href="http://localhost/Latihan/Journal_web_statis.html"> Selengkapnya</a></div>
+            </div>
+          </div>
+          <br><br>
+          <h2>Our Partner :</h2>
+    <img src="/Latihan/Images/logo1.png" width="200px" height="200px">
+    <img src="/Latihan/Images/logo2.webp" width="200px" height="200px"> 
+    <img src="/Latihan/Images/logo3.png" width="200px" height="200px">
+    <img src="/Latihan/Images/logo4.png" width="200px" height="200px"> 
+    <br><br>
+  </div>
+  <div class="main">
+    <h2>MAGGOTXPERT</h2>
+    <h4>Biokonversi Limbah Organik dengan Magot: Solusi Cerdas dan Ramah Lingkungan</h4>
+    <p style="margin-top: 35px; font-size: 17px">MaggotXpert adalah perusahaan inovatif yang berfokus pada pengolahan limbah organik menjadi sumber daya berharga melalui penggunaan maggot (larva) sebagai agen biokonversi. Kami memanfaatkan kemampuan luar biasa maggot untuk mengubah limbah organik seperti sampah makanan dan limbah pertanian menjadi pakan ternak, kompos, dan bahan baku industri yang bernilai tinggi. Dengan teknologi ramah lingkungan, kami membantu mengurangi masalah limbah global, sambil memberikan solusi berkelanjutan yang mendukung ketahanan pangan dan keberlanjutan lingkungan.</p>
+    <br> <br><br>
+    <h2>LALAT BSF (MAGGOT)</h2>
+    <div class="between-home">
+        <img src="/Latihan/Images/lalat bsf.png" class="imghome">
+        <img src="/Latihan/Images/maggot.webp" class="imghome">
+        <img src="/Latihan/Images/got.jpg" class="imghome">
+      </div>
+    <p style="font-size:17px">Lalat BSF <i>(Hermetia illucens)</i> adalah jenis lalat yang memiliki larva yang dikenal dengan sebutan maggot. Lalat ini sering dimanfaatkan dalam berbagai industri, seperti pengolahan limbah organik, produksi pakan ternak, dan bahkan dalam bidang medis. Larva BSF (maggot) terkenal karena kemampuannya dalam mengurai bahan organik, yang menjadikannya pilihan penting dalam pengelolaan sampah organik. Lalat BSF dewasa tidak mengonsumsi makanan, sedangkan larvanya memakan berbagai jenis bahan organik, termasuk sisa makanan dan limbah pertanian. Selain itu, larva BSF juga dapat mengkonversi bahan organik tersebut menjadi protein yang bernilai tinggi, yang dapat digunakan sebagai pakan ternak atau bahan tambahan untuk pakan ikan dan unggas. Klasifikasi Lalat BSF <i>(Hermetia illucens)</i> :
+      <ol class="lisol">
+        <li>Kingdom: Animalia</li>
+        <li>Phylum: Arthropoda</li>
+        <li>Class: Insecta</li>
+        <li>Order: Diptera</li>
+        <li>Family: Stratiomyidae</li>
+        <li>Genus: Hermetia</li>
+        <li>Species: Hermetia illucens</li>
+      </ol>
+      <br>
+      <p style="font-size:17px">Lalat BSF dewasa memiliki tubuh yang berwarna hitam metalik dengan panjang tubuh sekitar 15-20 mm. Lalat dewasa tidak memiliki mulut yang berfungsi untuk makan, sehingga mereka hanya hidup dalam fase dewasa untuk berkembang biak. Masa hidup dewasa relatif singkat, sekitar 5-8 hari. Larva atau maggot dari lalat BSF memiliki tubuh yang ramping, berwarna putih atau kekuningan, dan dapat mencapai panjang 30 mm dalam fase pupa. Larva BSF terkenal dengan kemampuannya dalam memakan limbah organik, termasuk bahan makanan sisa, daun, kotoran hewan, dan bahan organik lainnya.</p></p>
+    <br><br><br>
+    <h2>BIO CONVERTION</h2>
+    <div style="height:200px;"><img src="/Latihan/Images/proses.jpeg" class="imghome2"></div>
+    <p style="margin-top: 150px; font-size:17px">Maggot, larva dari lalat black soldier fly (BSF), memiliki kemampuan luar biasa dalam melakukan biokonversi limbah organik menjadi sumber daya yang berguna. Proses biokonversi ini memanfaatkan maggot untuk mengurai sampah organik—seperti sisa makanan, limbah pertanian, dan industri—menjadi nutrisi yang kaya protein, lemak sehat, dan mineral. Dengan sistem biokonversi maggot, limbah yang sebelumnya dianggap sebagai sampah dapat diubah menjadi pakan ternak berkualitas tinggi serta pupuk organik yang sangat berguna untuk pertanian. Proses ini tidak hanya mengurangi volume limbah, tetapi juga membantu mengurangi polusi dan menciptakan siklus sirkular yang berkelanjutan. Keunggulan lain dari biokonversi dengan maggot adalah efisiensinya. Maggot dapat mengolah berbagai jenis limbah organik dengan cepat, menghasilkan produk bernilai dalam waktu singkat, serta menggunakan sedikit ruang dan sumber daya. Ini menjadikan magot sebagai solusi ideal untuk mendukung pengelolaan limbah yang ramah lingkungan dan ekonomis.</p>
+    <br><br><br>
+    <h2>INFORMASI MENGENAI BIO KONVERSI MAGGOT</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1lywbny5hAc?si=f3a2LQSkkNzcayYN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/6a2Rph2FIyc?si=rN07Hr269ZeuNLAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/uA56npF-Ft8?si=wUqO-DaK5nXTh-bZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+
+     <!-- saran dan keluhan -->
+     <form action="/action_page.php" class="pmarg">
+  <div class="container-regis2">
+    <br>
+    <h1>Kolom Mendengar</h1>
+    <p>Silahkan isi kolom di bawah untuk keluhan yang dirasakan serta saran yang terbaik bagi kami. Ini akan menjadi bahan evaluasi bagi kami kedepannya agar lebih berkembang.</p>
+    <hr>
+    <label for="email"><b>Nama Akun / Email</b></label>
+    <input type="text" placeholder="Enter Nama Akun / Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw"><b>Kategori</b></label>
+    <div class="col-75sk">
+        <select id="country" name="country">
+          <option value="pilih">-- Pilih --</option>
+          <option value="Keluhan">Keluhan</option>
+          <option value="saran">Saran</option>
+        </select>
+      </div>
+      <br>
+ <div class="col-75sk">
+        <textarea id="subject" name="subject" placeholder="Silahkan isi.." style="height:200px; width: 100%;"></textarea>
+      </div>
+      <button type="submit" value="submit">Submit</button>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="btn">
+<button1 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button1>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="usercontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <i class="fa-solid fa-circle-user"></i>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button1 type="submit">Login</button1>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container-login" style="background-color:#f1f1f1">
+
+    </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<div class="footer-fix">
+  <h3>
+    <br>
+     <h2 class="h2foot">CONTACT US</h2>
+<br>
+<div class="wrapper">
+  <div class="icon">
+    <div class="tooltip">Instagram</div>
+    <span><a href="https://www.instagram.com/biomagg/?hl=id"><i class="fa-brands fa-instagram"></i></a></span>
+  </div>
+  <div class="icon">
+    <div class="tooltip">Twitter</div>
+    <span><a href="https://x.com/?lang=id"><i class="fa-brands fa-twitter"></i></a></span>
+  </div>
+  <div class="icon">
+    <div class="tooltip">WhatsApp</div>
+    <span><a href="https://www.whatsapp.com/?lang=id_ID"><i class="fa-brands fa-whatsapp"></i></a></span>
+  </div>
+   <div class="icon">
+    <div class="tooltip">Email</div>
+    <span><a href="https://workspace.google.com/intl/id/gmail/"><i class="fa-regular fa-envelope"></i></a></span>
+  </div>
+  <div class="icon">
+    <div class="tooltip">Youtube</div>
+    <span><a href=""><i class="fa-brands fa-youtube"></i></span>
+  </div></div></a></span></div>
+<div class="contter">
+  <ulter>
+    <li class="liter">PT. MaggotXpert</li><br><br>
+    <li>
+      <address>Plaza Semanggi lt. 3 Jl. Gatot Subroto Kav 40C Jakarta Pusat 12930 <br>
+        Ph. +62-20-9056789-11 fax +62-20-9056789<br> 
+      Reps :  Nivia Putri Prameswari +62 8769 0092 361 
+    </a></address>
+    </li>
+    <li>      
+    </li>
+  </ulter>
+</div>
+<div class="by">
+  &copy; 2024 Created by kei. All Right Reserved.
+</div> 
+</h3>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</body>
+</html>
