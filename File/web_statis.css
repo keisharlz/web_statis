@@ -110,7 +110,7 @@ form.search input[type=text]:focus {
 }
 
 .banner{
-  background: url(Images/banner2.jpeg) no-repeat;
+  background: url(../Images/banner2.jpeg) no-repeat;
   background-size: cover;
   height: calc(105vh - 60px);
 
